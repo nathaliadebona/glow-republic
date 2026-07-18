@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+:root {
+    --rosa: #FF3CAC;
+    --amarelo: #FFDE59;
+    --verde: #3CFFA0;
+    --roxo: #1A0033;
+    --branco: #FFFFFF;
+    --cinza-claro: #F0EDF5;
+    --cinza-texto: #555555;
+
+    --fonte-titulo: 'Plus Jakarta Sans', sans-serif;
+    --fonte-corpo: 'DM Sans', sans-serif;
+}
+
+body {
+    font-family: var(--fonte-corpo);
+    color: var(--roxo);
+    background-color: var(--branco);
+    line-height: 1.6;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 5%;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+nav a.logo {
+    font-family: var(--fonte-titulo);
+    font-size: 1.8rem;
+    color: var(--rosa);
+    font-weight: 800;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li a {
+    color: var(--branco);
+    font-family: var(--fonte-corpo);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--rosa);
+}
+
+.nav-scrolled {
+    background-color: var(--roxo);
+    backdrop-filter: blur(10px);
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--branco);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+footer {
+    background-color: var(--roxo);
+    color: var(--cinza-claro);
+    font-family: var(--fonte-corpo);
+    padding: 4rem 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+footer h4:first-child {
+    font-family: var(--fonte-titulo);
+    font-size: 2rem;
+    color: var(--rosa);
+    font-weight: 800;
+}
+
+footer ul {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+footer ul li a {
+    color: var(--cinza-claro);
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: var(--rosa);
+}
+
+footer ul li a svg {
+    fill: var(--cinza-claro);
+    stroke: var(--cinza-claro);
+    width: 24px;
+    height: 24px;
+    transition: fill 0.3s ease;
+}
+
+footer ul li a:hover svg {
+    fill: var(--rosa);
+    stroke: var(--rosa);
+}
+
+footer p > em {
+    font-size: 0.85rem;
+    opacity: 0.6;
+}
+
+.voltar-ao-topo {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-color: var(--rosa);
+    color: var(--branco);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    z-index: 999;
+    transition: opacity 0.3s ease;
+}
+
+.voltar-ao-topo:hover {
+    opacity: 0.85;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--roxo);
+        padding: 1rem 5%;
+        gap: 1rem;
+    }
+
+    nav ul.menu-aberto {
+        display: flex;
+    }
+
+    footer {
+        padding: 3rem 5%;
+    }
+
+    footer uk {
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-texto h1 {
+        font-size: 2rem;
+    }
+
+    #destaques h2,
+    #pilares h2,
+    #depoimentos h2,
+    #newsletter h2,
+    #cta h2 {
+        font-size: 1.8rem;
+    }
+
+    #manifesto blockquote {
+        font-size: 1.1rem;
+    }
+}
