@@ -4,13 +4,22 @@ Site fictício de uma marca brasileira de skincare vegano, jovem e vibrante. Des
 
 > Projeto pessoal de estudo, construído como prática de fundamentos de front-end: estruturação semântica de múltiplas páginas, estilização com variáveis CSS, manipulação do DOM e interatividade com JavaScript.
 
-<!-- Sugestão: adicione aqui um print ou GIF do site em funcionamento -->
-<!-- ![Preview do site](caminho-da-imagem.png) -->
+<img width="947" height="579" alt="image" src="https://github.com/user-attachments/assets/801b40e4-cf5a-46dc-b4b4-8cfef280be60" />
+
+![Animações da homepage](assets/destaques.gif)
+
+![Página produtos](assets/produtos.gif)
+
+![Contador animado](assets/contador.gif)
+
+
+
 
 ---
 
 ## 🔗 Demo
 
+https://nathaliadebona.github.io/glow-republic/
 `[link do site publicado]`
 
 ---
@@ -129,6 +138,9 @@ Ou use a extensão **Live Server** do VS Code para rodar com recarregamento auto
 ## 👩‍💻 Autoria
 
 Desenvolvido por **Nathália** como projeto de estudo em front-end.
+
+Github https://github.com/nathaliadebona
+Portfólio https://nathaliadebona.github.io/portfolio/
 
 ---
 
