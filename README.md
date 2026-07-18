@@ -123,7 +123,7 @@ Não há dependências ou build — é só HTML, CSS e JS puro.
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/glow-republic.git
+git clone https://github.com/nathaliadebona/glow-republic.git
 
 # Entre na pasta
 cd glow-republic
