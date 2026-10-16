@@ -101,9 +101,14 @@ function formatarPreco(valor) {
 const listaCarrinho = document.getElementById('lista-carrinho');
 
 if (listaCarrinho) {
+    let total = 0;
+
     carrinho.forEach(function(item) {
         listaCarrinho.innerHTML += `<p>${item.nome} - R$ ${formatarPreco(item.preco)}</p>`;
+        total += item.preco;
     });
+
+    document.getElementById("total-carrinho").textContent = formatarPreco(total);
 }
 
 const formulario = document.querySelector("#form-contato");
