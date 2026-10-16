@@ -119,6 +119,14 @@ if (listaCarrinho) {
         total += item.preco * item.quantidade;
     });
 
+    const botoesRemover = document.querySelectorAll('.btn-remover');
+
+    botoesRemover.forEach(function(botao) {
+        botao.addEventListener('click', function() {
+            console.log(botao.dataset.nome);
+        });
+    });
+
     document.getElementById("total-carrinho").textContent = formatarPreco(total);
 }
 
