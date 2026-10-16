@@ -67,6 +67,15 @@ botoesFiltro.forEach(function(botao) {
     })
 })
 
+const botoesCarrinho = document.querySelectorAll('.btn-carrinho');
+
+botoesCarrinho.forEach(function(botao) {
+    botao.addEventListener('click', function() {
+        console.log(botao.dataset.nome);
+        console.log(botao.dataset.preco);
+    });
+});
+
 const formulario = document.querySelector("#form-contato")
 
 if (formulario) {
