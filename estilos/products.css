@@ -261,6 +261,24 @@
     color: var(--rosa);
 }
 
+.btn-carrinho {
+    align-self: flex-start;
+    width: fit-content;
+    padding: 0.6rem 1.5rem;
+    font-family: var(--fonte-corpo);
+    font-weight: 600;
+    color: var(--branco);
+    border: none;
+    border-radius: 50px;
+    background-color: var(--rosa);
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.btn-carrinho:hover {
+    opacity: 0.85;
+}
+
 @media (max-width: 768px) {
     .grid-produtos {
         grid-template-columns: 1fr;
