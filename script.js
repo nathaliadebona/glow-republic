@@ -114,7 +114,7 @@ if (listaCarrinho) {
     let total = 0;
 
     carrinho.forEach(function(item) {
-        listaCarrinho.innerHTML += `<p>${item.nome} - R$ ${formatarPreco(item.preco)}</p>`;
+        listaCarrinho.innerHTML += `<p>${item.nome} - ${item.quantidade}x - R$ ${formatarPreco(item.preco)}</p>`;
         total += item.preco;
     });
 
