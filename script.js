@@ -67,7 +67,17 @@ botoesFiltro.forEach(function(botao) {
     })
 })
 
-const carrinho = JSON.parse(localStorage.getItem("carrinho")) || []
+const carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+
+const contadorCarrinho = document.querySelector('.contador-carrinho');
+
+function atualizarContador() {
+    if (contadorCarrinho) {
+        contadorCarrinho.textContent = carrinho.length;
+    }
+}
+
+atualizarContador();
 
 const botoesCarrinho = document.querySelectorAll('.btn-carrinho');
 
