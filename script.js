@@ -94,11 +94,15 @@ botoesCarrinho.forEach(function(botao) {
     });
 });
 
+function formatarPreco(valor) {
+    return valor.toFixed(2).replace(".", ",");
+}
+
 const listaCarrinho = document.getElementById('lista-carrinho');
 
 if (listaCarrinho) {
     carrinho.forEach(function(item) {
-        listaCarrinho.innerHTML += `<p>${item.nome} - R$ ${item.preco}</p>`;
+        listaCarrinho.innerHTML += `<p>${item.nome} - R$ ${formatarPreco(item.preco)}</p>`;
     });
 }
 
