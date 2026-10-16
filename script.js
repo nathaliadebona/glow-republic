@@ -67,7 +67,7 @@ botoesFiltro.forEach(function(botao) {
     })
 })
 
-const carrinho = [];
+const carrinho = JSON.parse(localStorage.getItem("carrinho")) || []
 
 const botoesCarrinho = document.querySelectorAll('.btn-carrinho');
 
@@ -79,6 +79,7 @@ botoesCarrinho.forEach(function(botao) {
         }
 
         carrinho.push(produto);
+        localStorage.setItem("carrinho", JSON.stringify(carrinho));
         console.log(carrinho);
     });
 });
