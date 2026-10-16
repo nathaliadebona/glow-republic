@@ -67,12 +67,19 @@ botoesFiltro.forEach(function(botao) {
     })
 })
 
+const carrinho = [];
+
 const botoesCarrinho = document.querySelectorAll('.btn-carrinho');
 
 botoesCarrinho.forEach(function(botao) {
     botao.addEventListener('click', function() {
-        console.log(botao.dataset.nome);
-        console.log(botao.dataset.preco);
+        const produto = {
+            nome: botao.dataset.nome,
+            preco: Number(botao.dataset.preco)
+        }
+
+        carrinho.push(produto);
+        console.log(carrinho);
     });
 });
 
