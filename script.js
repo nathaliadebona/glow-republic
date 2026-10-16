@@ -85,10 +85,20 @@ botoesCarrinho.forEach(function(botao) {
     botao.addEventListener('click', function() {
         const produto = {
             nome: botao.dataset.nome,
-            preco: Number(botao.dataset.preco)
+            preco: Number(botao.dataset.preco),
+            quantidade: 1
         };
 
-        carrinho.push(produto);
+        const itemExistente = carrinho.find(function(item) {
+            return item.nome === produto.nome; 
+        });
+
+        if (itemExistente) {
+            itemExistente.quantidade += 1;
+        } else {
+            carrinho.push(produto);
+        }
+        
         localStorage.setItem("carrinho", JSON.stringify(carrinho));
         atualizarContador();
     });
