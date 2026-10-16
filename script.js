@@ -94,6 +94,14 @@ botoesCarrinho.forEach(function(botao) {
     });
 });
 
+const listaCarrinho = document.getElementById('lista-carrinho');
+
+if (listaCarrinho) {
+    carrinho.forEach(function(item) {
+        listaCarrinho.innerHTML += `<p>${item.nome} - R$ ${item.preco}</p>`;
+    });
+}
+
 const formulario = document.querySelector("#form-contato");
 
 if (formulario) {

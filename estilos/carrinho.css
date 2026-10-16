@@ -1,0 +1,7 @@
+header nav { 
+    background-color: var(--roxo); 
+}
+
+#itens-carrinho {
+    padding: 8rem 5% 4rem;
+}
