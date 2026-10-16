@@ -134,6 +134,21 @@ if (listaCarrinho) {
         });
     });
 
+    const botoesAumentar = document.querySelectorAll('.btn-aumentar');
+
+    botoesAumentar.forEach(function(botao) {
+        botao.addEventListener('click', function() {
+            const item = carrinho.find(function(i) {
+                return i.nome === botao.dataset.nome;
+            });
+
+            item.quantidade += 1;
+
+            localStorage.setItem("carrinho", JSON.stringify(carrinho));
+            location.reload();
+        });
+    });
+
     document.getElementById("total-carrinho").textContent = formatarPreco(total);
 }
 
