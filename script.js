@@ -115,7 +115,7 @@ if (listaCarrinho) {
 
     carrinho.forEach(function(item) {
         listaCarrinho.innerHTML += `<p>${item.nome} - ${item.quantidade}x - R$ ${formatarPreco(item.preco)}</p>`;
-        total += item.preco;
+        total += item.preco * item.quantidade;
     });
 
     document.getElementById("total-carrinho").textContent = formatarPreco(total);
