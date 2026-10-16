@@ -123,7 +123,12 @@ if (listaCarrinho) {
 
     botoesRemover.forEach(function(botao) {
         botao.addEventListener('click', function() {
-            console.log(botao.dataset.nome);
+            const novaLista = carrinho.filter(function(item) {
+                return item.nome !== botao.dataset.nome;
+            });
+
+            localStorage.setItem("carrinho", JSON.stringify(novaLista));
+            location.reload();
         });
     });
 
