@@ -157,9 +157,17 @@ if (listaCarrinho) {
                 return i.nome === botao.dataset.nome;
             });
 
-            item.quantidade -= 1;
+            if (item.quantidade > 1) {
+                item.quantidade -= 1;
+                localStorage.setItem("carrinho", JSON.stringify(carrinho));
+            } else {
+                const novaLista = carrinho.filter(function(item) {
+                    return item.nome !== botao.dataset.nome;
+                });
 
-            localStorage.setItem("carrinho", JSON.stringify(carrinho));
+                localStorage.setItem("carrinho", JSON.stringify(novaLista));
+            }
+
             location.reload();
         });
     });
