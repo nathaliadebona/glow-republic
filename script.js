@@ -73,7 +73,13 @@ const contadorCarrinho = document.querySelector('.contador-carrinho');
 
 function atualizarContador() {
     if (contadorCarrinho) {
-        contadorCarrinho.textContent = carrinho.length;
+        let quantidadeTotal = 0;
+
+        carrinho.forEach(function(item) {
+            quantidadeTotal += item.quantidade;
+        });
+
+        contadorCarrinho.textContent = quantidadeTotal;
     }
 }
 
