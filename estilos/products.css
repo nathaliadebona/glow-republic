@@ -183,18 +183,6 @@
     color: #7B2FBE;
 }
 
-.grid-produtos .card-produto:nth-child(3) .btn-modal {
-    color: var(--verde);
-}
-
-.grid-produtos .card-produto:nth-child(4) .btn-modal {
-    color: var(--amarelo);
-}
-
-.grid-produtos .card-produto:nth-child(5) .btn-modal {
-    color: #FFB3DE;
-}
-
 .grid-produtos .card-produto:nth-child(6) .btn-modal {
     color: var(--branco);
     background-color: rgba(255,255,255,0.15);
