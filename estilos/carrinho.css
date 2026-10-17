@@ -14,3 +14,17 @@ header nav {
     font-weight: 800;
     color: var(--roxo);
 }
+
+.item-carrinho {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem;
+    margin-bottom: 0.8rem;
+    background-color: var(--cinza-claro);
+    border-radius: 1rem;
+}
+
+.item-carrinho p {
+    flex: 1;
+}

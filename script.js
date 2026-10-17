@@ -122,9 +122,11 @@ if (listaCarrinho) {
     carrinho.forEach(function(item) {
         listaCarrinho.innerHTML += 
         `<div class="item-carrinho">
-            <p>${item.nome} - ${item.quantidade}x - R$ ${formatarPreco(item.preco)}</p>
+            <p class="item-nome">${item.nome}</p>
             <button class="btn-diminuir" data-nome="${item.nome}">−</button>
+            <span class="item-quantidade">${item.quantidade}</span>
             <button class="btn-aumentar" data-nome="${item.nome}">+</button>
+            <span class="item-preco">R$ ${formatarPreco(item.preco * item.quantidade)}</span>
             <button class="btn-remover" data-nome="${item.nome}">Remover</button>
         </div>`;
 
