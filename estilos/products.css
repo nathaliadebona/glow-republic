@@ -299,4 +299,8 @@
     #selos {
        grid-template-columns: 1fr; 
     }
+
+    .modal-conteudo {
+        padding: 1.5rem;
+    }
 }
