@@ -21,8 +21,8 @@ header nav {
     gap: 0.8rem;
     padding: 1rem;
     margin-bottom: 0.8rem;
-    background-color: var(--cinza-claro);
     border-radius: 1rem;
+    background-color: var(--cinza-claro);
 }
 
 .item-carrinho p {
@@ -71,8 +71,8 @@ header nav {
 
 .btn-remover {
     padding: 0.4rem 1rem;
-    border-radius: 3.125rem;
     border: 0.125rem solid var(--rosa);
+    border-radius: 3.125rem;
     font-family: var(--fonte-corpo);
     font-weight: 600;
     font-size: 0.85rem;
@@ -131,8 +131,8 @@ header nav {
     }
 
     .item-preco {
-        min-width: 4.5rem;
         flex: 1;
+        min-width: 4.5rem;
         text-align: center;
     }
 }
