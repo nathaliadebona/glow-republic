@@ -66,18 +66,53 @@
     padding: 2rem 5% 5rem;
 }
 
+.card-produto {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.tag-categoria {
+    align-self: flex-start;
+    padding: 0.3rem 0.8rem;
+    border-radius: 3.125rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.card-produto h3 {
+    font-family: var(--fonte-titulo);
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.card-produto .descricao {
+    flex: 1;
+    font-size: 0.95rem;
+}
+
+.card-produto .preco {
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
 .grid-produtos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
 
-.grid-produtos .card.produto {
+.grid-produtos .card-produto {
     min-height: 300px;
     justify-content: space-between;
 }
 
-.grid-produtos .card.produto .btn-modal {
+.grid-produtos .card-produto .btn-modal {
     margin-top: auto;
 }
 
