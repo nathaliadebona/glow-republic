@@ -28,3 +28,61 @@ header nav {
 .item-carrinho p {
     flex: 1;
 }
+
+.item-nome {
+    font-weight: 600;
+    color: var(--roxo);
+}
+
+.item-preco {
+    min-width: 6rem;
+    text-align: right;
+    font-weight: 600;
+    color: var(--roxo);
+}
+
+.btn-diminuir,
+.btn-aumentar {
+    width: 2rem;
+    height: 2rem;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--roxo);
+    background-color: var(--branco);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-diminuir:hover,
+.btn-aumentar:hover {
+    color: var(--branco);
+    background-color: var(--rosa);
+}
+
+.item-quantidade {
+    min-width: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+    color: var(--roxo);
+}
+
+.btn-remover {
+    padding: 0.4rem 1rem;
+    border-radius: 3.125rem;
+    border: 0.125rem solid var(--rosa);
+    font-family: var(--fonte-corpo);
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: var(--rosa);
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-remover:hover {
+    color: var(--branco);
+    background-color: var(--rosa);
+}
