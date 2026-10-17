@@ -12,58 +12,58 @@
 }
 
 #intro-produtos {
-    background-color: var(--roxo);
     padding: 8rem 5% 4rem;
     text-align: center;
+    background-color: var(--roxo);
 }
 
 #intro-produtos h1 {
+    margin-bottom: 1rem;
     font-family: var(--fonte-titulo);
     font-size: 3rem;
     font-weight: 800;
     color: var(--branco);
-    margin-bottom: 1rem;
 }
 
 #intro-produtos p {
-    color: var(--cinza-claro);
     font-size: 1.1rem;
+    color: var(--cinza-claro);
 }
 
 .filtros {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
     padding: 3rem 5% 1rem;
-    flex-wrap: wrap;
     background-color: var(--cinza-claro);
 }
 
 .filtros button {
+    padding: 0.5rem 1.5rem;
     border: 2px solid var(--rosa);
+    border-radius: 50px;
+    font-family: var(--fonte-corpo);
+    font-weight: 600;
     color: var(--rosa);
     background-color: transparent;
-    padding: 0.5rem 1.5rem;
-    border-radius: 50px;
-    font-weight: 600;
     cursor: pointer;
-    font-family: var(--fonte-corpo);
     transition: all 0.3s ease;
 }
 
 .filtros button:hover {
-    background-color: var(--rosa);
     color: var(--branco);
+    background-color: var(--rosa);
 }
 
 .filtros button.ativo {
-    background-color: var(--rosa);
     color: var(--branco);
+    background-color: var(--rosa);
 }
 
 #produtos {
-    background-color: var(--cinza-claro);
     padding: 2rem 5% 5rem;
+    background-color: var(--cinza-claro);
 }
 
 .card-produto {
@@ -76,8 +76,8 @@
 }
 
 .card-produto:hover {
-    transform: translateY(-5px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
 }
 
 .tag-categoria {
@@ -114,8 +114,8 @@
 }
 
 .grid-produtos .card-produto {
-    min-height: 300px;
     justify-content: space-between;
+    min-height: 300px;
 }
 
 .grid-produtos .card-produto .btn-modal {
@@ -123,34 +123,34 @@
 }
 
 .grid-produtos .card-produto:nth-child(1) {
-    background-color: var(--rosa);
     color: var(--branco);
+    background-color: var(--rosa);
 }
 
 .grid-produtos .card-produto:nth-child(2) {
-    background-color: #7B2FBE;
     color: var(--branco);
+    background-color: #7B2FBE;
 }
 
 .grid-produtos .card-produto:nth-child(3) {
-    background-color: var(--verde);
     color: var(--roxo);
+    background-color: var(--verde);
 }
 
 .grid-produtos .card-produto:nth-child(4) {
-    background-color: var(--amarelo);
     color: var(--roxo);
+    background-color: var(--amarelo);
 }
 
 .grid-produtos .card-produto:nth-child(5) {
-    background-color: #FFB3DE;
     color: var(--roxo);
+    background-color: #FFB3DE;
 }
 
 .grid-produtos .card-produto:nth-child(6) {
-    background-color: #1A0033;
-    color: var(--branco);
     border: 1px solid rgba(255,255,255,0.1);
+    color: var(--branco);
+    background-color: #1A0033;
 }
 
 .card-produto.escondido {
@@ -158,17 +158,17 @@
 }
 
 .btn-modal {
-    background-color: var(--branco);
-    padding: 0.6rem 1.5rem;
-    border-radius: 50px;
-    font-weight: 600;
-    border: none;
-    cursor: pointer;
-    align-self: flex-start;
-    font-family: var(--fonte-corpo);
-    transition: opacity 0.3s ease;
     display: inline-block;
+    align-self: flex-start;
     width: fit-content;
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 50px;
+    font-family: var(--fonte-corpo);
+    font-weight: 600;
+    background-color: var(--branco);
+    cursor: pointer;
+    transition: opacity 0.3s ease;
 }
 
 .btn-modal:hover {
@@ -211,8 +211,8 @@
 
 .selo h3 {
     font-family: var(--fonte-titulo);
-    font-weight: 700;
     font-size: 1.3rem;
+    font-weight: 700;
     color: var(--roxo);
 }
 
@@ -222,16 +222,16 @@
 }
 
 .modal {
-    display: none;
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 2000;
+    display: none;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
     background-color: rgba(26, 0, 51, 0.85);
-    z-index: 2000;
-    align-items: center;
-    justify-content: center;
 }
 
 .modal.ativo {
@@ -243,13 +243,13 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    max-width: 500px;
     width: 90%;
+    max-width: 500px;
     max-height: 90vh;
     padding: 3rem;
+    border-radius: 20px;
     overflow-y: auto;
     background-color: var(--branco);
-    border-radius: 20px;
 }
 
 .modal-conteudo h2 {
@@ -260,16 +260,16 @@
 }
 
 .modal-conteudo h4 {
-    color: var(--rosa);
     font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+    color: var(--rosa);
 }
 
 .modal-conteudo p,
 .modal-conteudo li {
-    color: var(--cinza-texto);
     font-size: 0.95rem;
+    color: var(--cinza-texto);
 }
 
 .modal-conteudo ul {
@@ -281,11 +281,11 @@
     position: absolute;
     top: 1rem;
     right: 1rem;
-    background: none;
     border: none;
     font-size: 1.5rem;
-    cursor: pointer;
     color: var(--cinza-texto);
+    background: none;
+    cursor: pointer;
 }
 
 .fechar-modal:hover {
@@ -296,11 +296,11 @@
     align-self: flex-start;
     width: fit-content;
     padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 50px;
     font-family: var(--fonte-corpo);
     font-weight: 600;
     color: var(--branco);
-    border: none;
-    border-radius: 50px;
     background-color: var(--rosa);
     cursor: pointer;
     transition: opacity 0.3s ease;
@@ -321,12 +321,12 @@
     }
 
     .filtros button {
-        font-size: 0.85rem;
         padding: 0.4rem 1rem;
+        font-size: 0.85rem;
     }
 
     #selos {
-       grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
     }
 
     .modal-conteudo {
