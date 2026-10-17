@@ -1,16 +1,3 @@
-:root {
-    --rosa: #FF3CAC;
-    --amarelo: #FFDE59;
-    --verde: #3CFFA0;
-    --roxo: #1A0033;
-    --branco: #FFFFFF;
-    --cinza-claro: #F0EDF5;
-    --cinza-texto: #555555;
-
-    --fonte-titulo: 'Plus Jakarta Sans', sans-serif;
-    --fonte-corpo: 'DM Sans', sans-serif;
-}
-
 #hero {
     position: relative;
     display: flex;
