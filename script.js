@@ -121,7 +121,8 @@ if (listaCarrinho) {
 
     if (carrinho.length === 0) {
         listaCarrinho.innerHTML += 
-        `<p class="carrinho-vazio">Seu carrinho está vazio. Que tal escolher um produto Glow?</p>`;
+        `<p class="carrinho-vazio">Seu carrinho está vazio. Que tal escolher um produto Glow?</p>
+        <a href="products.html" class="btn-ver-produtos">Ver produtos</a>`;
         
         const textoTotal = document.querySelector('.total');
         textoTotal.style.display = "none";
