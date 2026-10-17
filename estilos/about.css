@@ -16,67 +16,67 @@ header nav {
 }
 
 #hero-about {
+    min-height: 60vh;
+    padding: 10rem 5% 5rem;
+    text-align: center;
     background-color: var(--rosa);
     background-image: url('../imagens/bancada.webp');
     background-size: cover;
     background-position: center 60%;
     background-blend-mode: multiply;
-    min-height: 60vh;
-    padding: 10rem 5% 5rem;
-    text-align: center;
 }
 
 #hero-about h1 {
+    max-width: 700px;
+    margin: 0 auto;
     font-family: var(--fonte-titulo);
     font-size: 3rem;
     font-weight: 800;
     color: var(--branco);
-    max-width: 700px;
-    margin: 0 auto;
 }
 
 #historia {
-    background-color: var(--branco);
-    padding: 5rem 5%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
     align-items: center;
+    padding: 5rem 5%;
+    background-color: var(--branco);
 }
 
 .historia-texto h2 {
+    margin-bottom: 1.5rem;
     font-family: var(--fonte-titulo);
     font-size: 2.5rem;
     font-weight: 800;
     color: var(--roxo);
-    margin-bottom: 1.5rem;
 }
 
 .historia-texto p {
-    color: var(--cinza-texto);
+    margin-bottom: 1rem;
     font-size: 1rem;
     line-height: 1.8;
-    margin-bottom: 1rem;
+    color: var(--cinza-texto);
 }
 
 #historia img {
-    border-radius: 20px;
     width: 100%;
+    border-radius: 20px;
     object-fit: cover;
 }
 
 #numeros {
-    background-color: var(--roxo);
     padding: 5rem 5%;
     text-align: center;
+    background-color: var(--roxo);
 }
 
 #numeros h2 {
+    margin-bottom: 3rem;
     font-family: var(--fonte-titulo);
     font-size: 2.5rem;
     font-weight: 800;
     color: var(--branco);
-    margin-bottom: 3rem;
 }
 
 .grid-numeros {
@@ -100,22 +100,22 @@ header nav {
 }
 
 .bloco-numero p {
-    color: var(--cinza-claro);
     font-size: 1rem;
+    color: var(--cinza-claro);
 }
 
 #time {
-    background-color: var(--cinza-claro);
     padding: 5rem 5%;
     text-align: center;
+    background-color: var(--cinza-claro);
 }
 
 #time h2 {
+    margin-bottom: 3rem;
     font-family: var(--fonte-titulo);
     font-size: 2.5rem;
     font-weight: 800;
     color: var(--roxo);
-    margin-bottom: 3rem;
 }
 
 .grid-time {
@@ -125,22 +125,22 @@ header nav {
 }
 
 .card-pessoa {
-    background-color: var(--branco);
-    border-radius: 20px;
-    padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     gap: 0.8rem;
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+    background-color: var(--branco);  
 }
 
 .card-pessoa img {
     width: 100px;
     height: 100px;
+    margin-bottom: 0.5rem;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 0.5rem;
 }
 
 .card-pessoa h3 {
@@ -151,14 +151,14 @@ header nav {
 }
 
 .cargo {
-    color: var(--rosa);
     font-size: 0.9rem;
     font-weight: 600;
+    color: var(--rosa);
 }
 
 .card-pessoa p {
-    color: var(--cinza-texto);
     font-size: 0.9rem;
+    color: var(--cinza-texto);
 }
 
 @media (max-width: 768px) {
