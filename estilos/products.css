@@ -153,6 +153,7 @@
     border-radius: 50px;
     font-family: var(--fonte-corpo);
     font-weight: 600;
+    color: var(--roxo);
     background-color: var(--branco);
     cursor: pointer;
     transition: opacity 0.3s ease;
