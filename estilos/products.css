@@ -210,15 +210,17 @@
 }
 
 .modal-conteudo {
-    background-color: var(--branco);
-    border-radius: 20px;
-    padding: 3rem;
-    max-width: 500px;
-    width: 90%;
     position: relative;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    max-width: 500px;
+    width: 90%;
+    max-height: 90vh;
+    padding: 3rem;
+    overflow-y: auto;
+    background-color: var(--branco);
+    border-radius: 20px;
 }
 
 .modal-conteudo h2 {
