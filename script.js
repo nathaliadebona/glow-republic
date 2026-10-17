@@ -119,6 +119,14 @@ const listaCarrinho = document.getElementById('lista-carrinho');
 if (listaCarrinho) {
     let total = 0;
 
+    if (carrinho.length === 0) {
+        listaCarrinho.innerHTML += 
+        `<p class="carrinho-vazio">Seu carrinho está vazio. Que tal escolher um produto Glow?</p>`;
+        
+        const textoTotal = document.querySelector('.total');
+        textoTotal.style.display = "none";
+    }
+
     carrinho.forEach(function(item) {
         listaCarrinho.innerHTML += 
         `<div class="item-carrinho">
