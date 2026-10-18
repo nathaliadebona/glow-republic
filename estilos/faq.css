@@ -19,11 +19,14 @@
 }
 
 .faq-resposta {
-    display: none;
-    padding: 1rem 0.6rem 0;
+    max-height: 0;
+    padding: 0 0.6rem;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
 }
 
 .faq-item.ativo .faq-resposta {
-    display: block;
+    max-height: 10rem;
+    padding: 1rem 0.6rem 0;
 }
 
