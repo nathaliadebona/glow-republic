@@ -1,5 +1,26 @@
+.faq-pergunta {
+    width: 100%;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 1rem;
+    text-align: left;
+    font-family: var(--fonte-corpo);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--roxo);
+    background-color: var(--cinza-claro);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.faq-pergunta:hover {
+    color: var(--branco);
+    background-color: var(--rosa);
+}
+
 .faq-resposta {
     display: none;
+    padding: 1rem 0.6rem 0;
 }
 
 .faq-item.ativo .faq-resposta {
