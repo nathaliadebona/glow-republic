@@ -210,21 +210,3 @@ footer p > em {
         gap: 1rem;
     }
 }
-
-@media (max-width: 480px) {
-    .hero-texto h1 {
-        font-size: 2rem;
-    }
-
-    #destaques h2,
-    #pilares h2,
-    #depoimentos h2,
-    #newsletter h2,
-    #cta h2 {
-        font-size: 1.8rem;
-    }
-
-    #manifesto blockquote {
-        font-size: 1.1rem;
-    }
-}
