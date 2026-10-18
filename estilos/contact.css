@@ -122,6 +122,10 @@ header nav {
 }
 
 @media (max-width: 768px) {
+    #intro-contato h1 {
+        font-size: 2.2rem;
+    }
+
     #contato {
         grid-template-columns: 1fr;
         gap: 2rem;

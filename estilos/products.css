@@ -299,6 +299,9 @@
 }
 
 @media (max-width: 768px) {
+    #intro-produtos h1 {
+        font-size: 2.2rem;
+    }
     .grid-produtos {
         grid-template-columns: 1fr;
     }
