@@ -299,4 +299,13 @@ if (btnNewsletter) {
     });
 }
 
+const perguntas = document.querySelectorAll('.faq-pergunta');
+
+perguntas.forEach(function(pergunta) {
+    pergunta.addEventListener("click", function() {
+        const item = pergunta.closest(".faq-item");
+        item.classList.toggle("ativo");
+    });
+});
+
         

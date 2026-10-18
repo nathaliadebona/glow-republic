@@ -1,0 +1,8 @@
+.faq-resposta {
+    display: none;
+}
+
+.faq-item.ativo .faq-resposta {
+    display: block;
+}
+
