@@ -158,6 +158,12 @@ header nav {
         font-size: 2.5rem;
     }
 
+    .historia-texto h2,
+    #numeros h2,
+    #time h2 {
+        font-size: 1.8rem;
+    }
+
     .grid-numeros {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
