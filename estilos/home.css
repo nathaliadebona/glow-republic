@@ -477,4 +477,12 @@
     .newsletter-form button {
         width: 100%;
     }
+
+    #destaques h2,
+    #pilares h2,
+    #depoimentos h2,
+    #newsletter h2,
+    #cta h2 {
+        font-size: 1.8rem;
+    }
 }
